@@ -39,3 +39,5 @@ const gender = 'M';
 console.log(`I am a ${gender === 'F' ? 'female' : 'male'}`);
 
 
+document.getElementById("title").style.color = "orange";
+
