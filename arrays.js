@@ -31,7 +31,7 @@ console.log(fruits);
 const students = ["yvonne", "alice", "patrick", "shadrack"];
 console.log(students);
 
-const itemQuantities = [12, 50, 70, 12, 4];
+const itemQuantities = [12, 50, 70, 12, 4]; // zero-indexed
 console.log(itemQuantities);
 
 const countries = [];
@@ -67,7 +67,7 @@ const numbers = [10, 12, 14, 16, 18, 20, 22];
 console.log(numbers.length); // 7
 
 console.log(numbers);
-numbers.pop();
+numbers.pop(); // destructive methods
 numbers.pop();
 numbers.pop();
 numbers.pop();
@@ -85,6 +85,56 @@ mixed.push(true);
 mixed.push(age);
 mixed.push(temperature);
 console.log(mixed);
+
+const people = [];
+people.push("bonane", "patrick", "shadrack");
+
+
+// people[0] = "bonane";
+// people[2] = "patrick";
+// people[3] = "shadrack";
+
+people.shift();
+people.shift();
+people.shift();
+
+people.unshift("kaboss");
+people.unshift("delyce");
+people.unshift("tom", "jack", "helen");
+
+console.log(people);
+
+const shoeBrands = ["nike", "yeezy", "adidas", "puma", "jordan"];
+
+console.log(shoeBrands);
+shoeBrands.splice(2, 3, "bodaboda");
+console.log(shoeBrands);
+
+// slice(start, end)
+
+const usaPresidents = ["trump", "biden", "obama", "bush"];
+const lastPresidents = usaPresidents.slice(0, 2);
+console.log(lastPresidents);
+
+// concat()
+
+const footballClubs = ["man utd", "real madrid", "chelsea", "liverpool"];
+const footballCoaches = ["Ruben", "Xabi", "Enzo", "Arne"];
+
+const clubsAndCoaches = footballClubs.concat(footballCoaches);
+console.log(footballClubs);
+console.log(footballCoaches);
+console.log(clubsAndCoaches);
+
+// destructuring:
+
+const newArray = [...footballClubs, ...footballCoaches];
+console.log(newArray);
+
+
+
+
+
 
 
 

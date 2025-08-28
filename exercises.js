@@ -26,11 +26,11 @@ for(let i = 1; i <= 10; i++) {
 // console.log("Finally 🎉");
 
 
-let number = 0;
-let secretNumber = 8;
+// let number = 0;
+// let secretNumber = 8;
 
-while(number !== secretNumber) {
-  number = Number(prompt("Guess the number"));
-}
+// while(number !== secretNumber) {
+//   number = Number(prompt("Guess the number"));
+// }
 
-console.log("Correct 🎉");
+// console.log("Correct 🎉");
