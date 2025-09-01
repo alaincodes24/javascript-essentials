@@ -131,8 +131,56 @@ console.log(clubsAndCoaches);
 const newArray = [...footballClubs, ...footballCoaches];
 console.log(newArray);
 
+const capitalCities = ["kigali", "cairo", "bujumbura"];
+console.log(capitalCities.length);
+
+// manipulating: push, pop, shift, unshift, slice, splice
+
+capitalCities.push("paris");
+capitalCities.unshift("moscow");
+capitalCities.pop();
+capitalCities.shift();
+const newArr = capitalCities.slice(0, 2);
+
+console.log(newArr);
+console.log(capitalCities);
+capitalCities.splice(1, 0, "nairobi"); // []
+console.log(capitalCities);
 
 
+// loops
+
+console.log(capitalCities[0]);
+console.log(capitalCities[1]);
+console.log(capitalCities[2]);
+console.log(capitalCities[capitalCities.length - 1]);
+
+
+// for loop
+
+for(let i = 0; i < capitalCities.length; i++) {
+  console.log(capitalCities[i]);
+}
+
+// 7 x 1 = 7
+// 7 x 2 = 14
+// 7 x 3 = 21
+// 7 x 4 = 28
+
+for(let i = 1; i <= 10; i++) {
+  console.log(`7 x ${i} = ${7 * i}`);
+}
+
+
+/** 
+push(): Adds an element to the end of the array. 
+pop(): Removes the last element from the array.
+shift(): Removes the first element from the array.
+unshift(): Adds an element to the beginning of the array.
+splice(): Adds or removes elements at a specified position.
+slice(): Creates a new array containing a portion of the original array.
+length: A property that returns the number of elements in the array.
+ */
 
 
 
