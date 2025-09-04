@@ -104,11 +104,4 @@ Create a function called calculateCartTotal that takes three parameters: item1Pr
 
 Formula: tax = subtotal × taxRate, total = subtotal + tax
 Test with: item1 = 25.99, item2 = 15.50, taxRate = 0.08
-
-
-
-
-
-
-
 */
