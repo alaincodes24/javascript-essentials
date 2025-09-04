@@ -157,3 +157,29 @@ const addFiveToNumber = x => x + 5;
 
 console.log(addFiveToNumber(12));
 
+
+/*
+Exercise 8: Time Converter
+Create a function called convertMinutesToHours that takes minutes as a parameter and converts it to hours and remaining minutes. Print in the format "X hours and Y minutes".
+
+Test with: 150 minutes
+Test with: 90 minutes
+Test with: 45 minutes
+*/
+
+function convertMinutesToHours(minutes) {
+  const x = minutes / 60;
+  const arr = (x + "").split(".");
+  const hours = arr[0];
+  let mins = 0; 
+  if(arr.length > 1) {
+    mins = ('0.' + arr[1]) * 60;
+  }
+  console.log(`${hours} hours and ${mins} minutes`);
+}
+
+convertMinutesToHours(150);
+convertMinutesToHours(90);
+convertMinutesToHours(45);
+convertMinutesToHours(2400);
+convertMinutesToHours(170);
